@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 250px;
+        height: fit-content;
+        background-color: blueviolet;
+        color: #fff;
+        padding: 20px;
+        margin: 50px auto;
+        position: relative;
+      }
+      .box::before {
+        content: "";
+        border:15px solid transparent;
+        border-top-color: blueviolet;
+        position: absolute;
+        bottom: -1.6rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque alias
+      consectetur quae at
+    </div>
+  </body>
+</html>
