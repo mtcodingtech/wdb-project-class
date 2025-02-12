@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            background-color: brown;
+            color: #fff;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            position: absolute;
+        }
+        span:nth-child(1){
+            top: 30px;
+            left: 30px;
+            z-index: 1;
+            background-color: rgb(242, 101, 26);
+        }
+        span:nth-child(2){
+            top: 60px;
+            left: 60px;
+            z-index: 2;
+            background-color: rgb(255, 0, 174);
+        }
+        span:nth-child(3){
+            top: 90px;
+            left: 90px;
+            z-index: -3;
+            background-color: rgb(75, 140, 244);
+        }
+    </style>
+</head>
+<body>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+</body>
+</html>
