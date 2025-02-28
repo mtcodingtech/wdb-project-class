@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variable</title>
+    <style>
+      :root {
+        --main-color: rgb(28, 223, 103);
+        --text-color: #ba1515;
+        --fs-md: 15px;
+        --fs-lg: 20px;
+      }
+      .card h2 {
+        background-color: var(--main-color);
+        color: var(--text-color);
+      }
+      .card p {
+        color: var(--main-color);
+      }
+      .card input {
+        background-color: var(--main-color);
+      }
+      .card button {
+        background-color: var(--main-color);
+        color: var(--text-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Heading 2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quam ea
+        explicabo, beatae dicta veritatis, quos doloribus necessitatibus
+        delectus eveniet, eos ratione expedita eaque animi. Vel incidunt
+        deleniti ex sapiente?
+      </p>
+      <input type="text" />
+      <button>Click</button>
+    </div>
+  </body>
+</html>

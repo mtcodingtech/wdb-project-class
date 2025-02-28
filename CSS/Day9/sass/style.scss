@@ -1,0 +1,21 @@
+$main-color: blue;
+$text-color: #fff;
+$padding-md: 16px;
+
+.main-container{
+    .card{
+        h1{
+            color: $main-color;
+        }
+        p{
+            background-color: $main-color;
+            color: $text-color;
+            padding: $padding-md;
+        }
+        button{
+            background-color: $main-color;
+            color: $text-color;
+            padding: $padding-md;
+        }
+    }
+}

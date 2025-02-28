@@ -1,0 +1,13 @@
+.main-container .card h1 {
+  color: blue;
+}
+.main-container .card p {
+  background-color: blue;
+  color: #fff;
+  padding: 16px;
+}
+.main-container .card button {
+  background-color: blue;
+  color: #fff;
+  padding: 16px;
+}/*# sourceMappingURL=style.css.map */

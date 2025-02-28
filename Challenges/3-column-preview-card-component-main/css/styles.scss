@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+$Bright-orange: hsl(31, 77%, 52%);
+$Dark-cyan: hsl(184, 100%, 22%);
+$Very-dark-cyan: hsl(179, 100%, 13%);
+$Transparent: hsla(0, 0%, 100%, 0.75);
+$Very-light-gray: hsl(0, 0%, 95%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  background-color: $Very-light-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 15px;
+}
+.container {
+  max-width: 800px;
+  background-color: pink;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 4rem 1rem;
+  @media (min-width:768px){
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+  }
+  .card {
+    padding: 1.5rem 3rem;
+    min-height: 380px;
+    position: relative;
+    @media (min-width: 768px){
+        padding: 1.5rem 2rem;
+    }
+    &:nth-child(1){
+        background-color: $Bright-orange;
+        a{
+            color: $Bright-orange;
+            &:hover{
+                background-color: $Bright-orange;
+                border: 2px solid $Very-light-gray;
+                color: $Very-light-gray;
+            }
+        }
+    }
+    &:nth-child(2){
+        background-color: $Dark-cyan;
+        a{
+            color: $Dark-cyan;
+            &:hover{
+                background-color: $Dark-cyan;
+                border: 2px solid $Very-light-gray;
+                color: $Very-light-gray;
+            }
+        }
+    }
+    &:nth-child(3){
+        background-color: $Very-dark-cyan;
+        a{
+            color: $Very-dark-cyan;
+            &:hover{
+                background-color: $Very-dark-cyan;
+                border: 2px solid $Very-light-gray;
+                color: $Very-light-gray;
+            }
+        }
+    }
+    img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+    h2 {
+        margin: 0.6rem 0 1rem;
+        color: $Very-light-gray;
+        font-size: 2rem;
+    }
+    p {
+        color: $Transparent;
+        line-height: 1.5;
+    }
+    a {
+
+        text-decoration: none;
+        background-color: $Very-light-gray;
+        padding: 0.6rem 1.4rem;
+        border-radius: 2rem;
+        position: absolute;
+        bottom: 2rem;
+        transition: 0.5s;
+        
+    }
+  }
+}
