@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+$Strong-Cyan: hsl(171, 66%, 44%);
+$Light-Blue: hsl(233, 100%, 69%);
+$Dark-Grayish-Blue: hsl(210, 10%, 33%);
+$Grayish-Blue: hsl(201, 11%, 66%);
+$White: #fff;
+
+$Strong-Cyan-Opacity: hsla(171, 66%, 44%, 0.5);
+$Light-Blue-Opacity: hsla(233, 100%, 69%, 0.5);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: $Dark-Grayish-Blue;
+}
+
+p {
+  line-height: 1.5;
+  color: $Grayish-Blue;
+  font-size: 15px;
+}
+
+section{
+    padding: 1.5rem;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+ 
+  .hero-container {
+    max-width: 100%;
+    text-align: center;
+    @media (min-width: 992px) {
+      max-width: 45%;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+    h1 {
+      margin-top: 2.5rem;
+      font-size: 2rem;
+    }
+    p {
+      margin: 1rem 0;
+      font-size: 18px;
+    }
+    .btn-container {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      @media (min-width: 992px) {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 0.8rem;
+      }
+      a {
+        text-decoration: none;
+        color: $White;
+        border-radius: 30px;
+        padding: 0.8rem 1.8rem;
+        @media (min-width: 992px) {
+          padding: 0.5rem 1.5rem;
+        }
+      }
+      .ios {
+        background-color: $Strong-Cyan;
+        box-shadow: 0 4px 3px $Strong-Cyan-Opacity;
+      }
+      .mac {
+        background-color: $Light-Blue;
+        box-shadow: 0 4px 3px $Light-Blue-Opacity;
+      }
+    }
+  }
+}
+
+.content {
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+  @media (min-width: 992px) {
+    max-width: 45%;
+  }
+  p {
+    margin-top: 0.8rem;
+  }
+}
+.sinppets-section {
+  min-height: 100vh;
+ 
+
+  .container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .img-container {
+      img {
+        width: 100%;
+
+        @media (min-width: 992px) {
+          transform: translateX(-10%);
+        }
+      }
+    }
+    .detail-container {
+      display: grid;
+      row-gap: 2rem;
+      margin-top: 2rem;
+      @media (min-width: 992px) {
+        margin-top: 0px;
+      }
+      .detail {
+        text-align: center;
+        @media (min-width: 992px) {
+          max-width: 60%;
+          text-align: left;
+        }
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.access-section{
+    margin-top: 3rem;
+    .img-container{
+        text-align: center;
+        margin-top: 3rem;
+        img{
+            width: 100%;
+           @media (min-width: 992px) {
+            width: 60%;
+           }
+        }
+    }
+}
